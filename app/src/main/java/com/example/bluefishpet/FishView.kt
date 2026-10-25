@@ -21,24 +21,24 @@ class FishView(context: Context) : View(context) {
         paint.color = Color.parseColor("#1688E8")
         val tail = Path().apply {
             moveTo(110f, 160f)
-            quadraticTo(30f, 90f, 20f, 150f)
-            quadraticTo(30f, 220f, 110f, 180f)
+            quadTo(30f, 90f, 20f, 150f)
+            quadTo(30f, 220f, 110f, 180f)
             close()
         }
         canvas.drawPath(tail, paint)
 
         val finTop = Path().apply {
             moveTo(190f, 90f)
-            quadraticTo(230f, 40f, 275f, 90f)
-            quadraticTo(230f, 110f, 190f, 90f)
+            quadTo(230f, 40f, 275f, 90f)
+            quadTo(230f, 110f, 190f, 90f)
             close()
         }
         canvas.drawPath(finTop, paint)
 
         val finBottom = Path().apply {
             moveTo(190f, 215f)
-            quadraticTo(230f, 265f, 280f, 215f)
-            quadraticTo(230f, 200f, 190f, 215f)
+            quadTo(230f, 265f, 280f, 215f)
+            quadTo(230f, 200f, 190f, 215f)
             close()
         }
         canvas.drawPath(finBottom, paint)
@@ -52,8 +52,8 @@ class FishView(context: Context) : View(context) {
         paint.color = Color.parseColor("#39A8F0")
         val side = Path().apply {
             moveTo(180f, 170f)
-            quadraticTo(220f, 215f, 265f, 175f)
-            quadraticTo(220f, 160f, 180f, 170f)
+            quadTo(220f, 215f, 265f, 175f)
+            quadTo(220f, 160f, 180f, 170f)
             close()
         }
         canvas.drawPath(side, paint)
@@ -71,7 +71,7 @@ class FishView(context: Context) : View(context) {
         paint.color = Color.parseColor("#12395C")
         val mouth = Path().apply {
             moveTo(320f, 175f)
-            quadraticTo(340f, 195f, 362f, 175f)
+            quadTo(340f, 195f, 362f, 175f)
         }
         canvas.drawPath(mouth, paint)
 
